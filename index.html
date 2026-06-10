@@ -47,11 +47,17 @@ border-radius:25px;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
 transition:.3s;
 cursor:pointer;    
+position:relative;
+overflow:hidden;
+height:200px;    
 }
 .card:hover{
 transform:translateY(-10px);
 box-shadow:0 20px 40px rgba(0,0,0,.15);   
 }
+.card:hover img{
+transform:scale(1.08);
+}    
 .card h3{
 font-size:26px;
 margin-bottom:15px;
@@ -245,6 +251,29 @@ font-size:20px;
 footer{
     max-width:1400px;
     margin:auto;
+} 
+.card-body{
+display:flex;
+justify-content:space-between;
+align-items:flex-end;
+height:100%;
+gap:20px;
+}
+.card-text{
+flex:1;
+}
+.card-body img{
+position:absolute;
+bottom:10px;
+right:10px;
+width:110px;
+height:auto;
+opacity:.95;
+width:120px;
+height:auto;
+max-width:120px;    
+object-fit:contain;
+transition:.3s;
 }    
 </style>
 
