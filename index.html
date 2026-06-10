@@ -12,329 +12,181 @@ padding:0;
 box-sizing:border-box;
 font-family:'Segoe UI',sans-serif;
 }
-
 body{
 background:#f5f7fb;
 }
-
 header{
-
 background:linear-gradient(
 135deg,
 #003b78,
 #002a5e
 );
-
 color:white;
-
 padding:30px 80px 80px;
-
 position:relative;
 }
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
-
-padding:50px 60px;
-}
-
-.card{
-
-background:white;
-
-padding:30px;
-
-border-radius:25px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-transition:.3s;
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-}
-
-.card h3{
-
-font-size:30px;
-
-margin-bottom:20px;
-}
-
-.card p{
-
-font-size:18px;
-
-line-height:1.6;
-
-margin-bottom:30px;
-}
-
-.card a{
-
-text-decoration:none;
-
-font-weight:bold;
-
-font-size:18px;
-}
-
-.pregrado{
-
-border-top:8px solid #2d7ff9;
-}
-
-.pec{
-
-border-top:8px solid #27ae60;
-}
-
-.recursos{
-
-border-top:8px solid #8e44ad;
-}
-footer{
-text-align:center;
-padding:20px;
-background:#003366;
-color:white;
-}
-
-.descripcion{
-    margin-top:20px;
-    font-size:16px;
-    color:#dbeafe;
-    max-width:700px;
-    margin-left:auto;
-    margin-right:auto;
-    line-height:1.6;
-}
-
-.subtitulo{
-    font-size:20px;
-    margin-top:10px;
-    font-weight:500;
-}  
-
 .logo{
     position:absolute;
     top:15px;
     left:30px;
     width:260px;
     height:auto;
-}
-
-.header-brand h1{
-    margin:0;
-}
 nav{
-
 display:flex;
-
 justify-content:center;
-
 gap:50px;
-
 margin-top:10px;
 }
-
 nav a{
-
 color:white;
-
 text-decoration:none;
-
 font-size:18px;
-
 font-weight:500;
 }
-
 .hero{
-
 display:flex;
-
 justify-content:center;
-
 margin-top:80px;
 }
-
 .hero-text{
-
 max-width:900px;
-
 text-align:center;
 }
-
 .hero h1{
-
 font-size:64px;
-
 font-weight:700;
-
 margin-bottom:10px;
 }
-
 .hero h1 span{
-
 color:#17d4d4;
 }
-
 .hero h2{
-
 font-size:32px;
-
 margin-bottom:20px;
 }
-
 .hero p{
-
 font-size:22px;
-
 line-height:1.6;
-
 opacity:.95;
-
 margin-bottom:40px;
 }
-
 .search-box{
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
 }
-
 .search-box input{
-
 width:700px;
-
 padding:22px;
-
 border:none;
-
 border-radius:50px;
-
 font-size:20px;
 }
-
 .search-box button{
-
 width:70px;
-
 height:70px;
-
 border:none;
-
 border-radius:50%;
-
 margin-left:-75px;
-
 cursor:pointer;
-
 font-size:24px;
-
 background:#00d3d3;
 }
-
-
-    
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+padding:50px 60px;
+}
+.card{
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-8px);
+}
+.card h3{
+font-size:30px;
+margin-bottom:20px;
+}
+.card p{
+font-size:18px;
+line-height:1.6;
+margin-bottom:30px;
+}
+.card a{
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+}
+.pregrado{
+border-top:8px solid #2d7ff9;
+}
+.pec{
+border-top:8px solid #27ae60;
+}
+.recursos{
+border-top:8px solid #8e44ad;
+}
 </style>
-
 </head>
 <body>
-
 <header>
 <img src="images/logo-certus-30.png" alt="Logo Certus" class="logo"> 
-
     <nav>
         <a href="#">Inicio</a>
         <a href="#">Novedades</a>
         <a href="#">Directorio</a>
     </nav>
-
     <div class="hero">
-
         <div class="hero-text">
-
             <h1>
                 Portal de <span>Conocimiento</span>
             </h1>
-
             <h2>
                 Canal de Atención al Estudiante | CERTUS
             </h2>
-
             <p>
                 Centraliza procedimientos, flujos, documentación y recursos para una atención eficiente y estandarizada.
             </p>
-
             <div class="search-box">
-
                 <input type="text" placeholder="¿Qué deseas consultar?">
-
                 <button>
                     🔍
                 </button>
-
             </div>
-
         </div>
-
     </div>
-
 </header>
-
 <section class="cards">
-
     <div class="card pregrado">
-
         <h3>🌎 Mundo Pregrado</h3>
-
         <p>
             Todo lo que necesitas para atender consultas de estudiantes de Pregrado.
         </p>
-
         <a href="pregrado.html">
             Ingresar →
         </a>
-
     </div>
-
     <div class="card pec">
-
         <h3>🌎 Mundo PEC</h3>
-
         <p>
             Recursos y herramientas para atender consultas de Educación Continua.
         </p>
-
         <a href="pec.html">
             Ingresar →
         </a>
-
     </div>
-
     <div class="card recursos">
-
-        <h3>🌐 Recursos Institucionales</h3>
-
+        <h3>🌐 Recursos Genrales</h3>
         <p>
             Información general y recursos transversales para todos los asesores.
         </p>
-
         <a href="servicios.html">
             Ingresar →
         </a>
-
     </div>
-
 </section>
