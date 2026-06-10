@@ -30,18 +30,19 @@ background:linear-gradient(
 #002a5e
 );
 color:white;
-padding:20px 60px 70px;
+padding:15px 50px 40px;
 position:relative;
 }
 .cards{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:30px;
-padding:50px 60px;
+padding:30px 60px;
 }
 .card{
 background:white;
-padding:30px;
+padding:25px;
+min-height:220px;    
 border-radius:25px;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
 transition:.3s;
@@ -57,7 +58,7 @@ margin-bottom:20px;
 font-weight:700;    
 }
 .card p{
-font-size:18px;
+font-size:16px;
 line-height:1.6;
 margin-bottom:30px;
 }
@@ -99,7 +100,7 @@ color:white;
     position:absolute;
     top:15px;
     left:30px;
-    width:260px;
+    width:200px;
     height:auto;
 }
 .header-brand h1{
@@ -120,14 +121,14 @@ font-weight:500;
 .hero{
 display:flex;
 justify-content:center;
-margin-top:40px;
+margin-top:20px;
 }
 .hero-text{
 max-width:900px;
 text-align:center;
 }
 .hero h1{
-font-size:56px;    
+font-size:48px;    
 font-weight:800;
 margin-bottom:10px;
 line-height:1.1;    
@@ -136,15 +137,15 @@ line-height:1.1;
 color:#17d4d4;
 }
 .hero h2{
-font-size:24px;
+font-size:18    px;
 margin-bottom:20px;
 font-weight:600;    
 }
 .hero p{
-font-size:18px;
+font-size:16px;
 line-height:1.6;
 opacity:.95;
-margin-bottom:40px;
+margin-bottom:25px;
 max-width:700px;
 margin:auto;
 }
@@ -154,15 +155,15 @@ justify-content:center;
 align-items:center;
 }
 .search-box input{
-width:600px;
-padding:18px;
+width:550px;
+padding:16px;
 border:none;
 border-radius:50px;
 font-size:20px;
 }
 .search-box button{
-width:70px;
-height:70px;
+width:60px;
+height:60px;
 border:none;
 border-radius:50%;
 margin-left:-75px;
@@ -236,7 +237,13 @@ margin-bottom:15px;
 .tool-card h3{
 font-size:20px;
 }
-    
+.hero,
+.cards,
+.herramientas,
+footer{
+    max-width:1400px;
+    margin:auto;
+}    
 </style>
 
         
