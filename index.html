@@ -196,6 +196,42 @@ margin-bottom:5px;
 opacity:.85;
 font-size:14px;
 }
+.herramientas{
+padding:60px;
+text-align:center;
+}
+.herramientas h2{
+font-size:36px;
+margin-bottom:40px;
+color:#003b78;
+}
+.herramientas-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+.tool-card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+text-decoration:none;
+color:#333;
+transition:.3s;
+}
+.tool-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 35px rgba(0,0,0,.12);
+}
+.tool-card span{
+font-size:50px;
+display:block;
+margin-bottom:15px;
+}
+.tool-card h3{
+font-size:20px;
+}
+    
 </style>
 
         
@@ -258,6 +294,32 @@ font-size:14px;
     </div>
 
 </section>
+<section class="herramientas">
+    <h2>⚡ Herramientas del Asesor</h2>
+    <div class="herramientas-grid">
+        <a href="speech.html" class="tool-card">
+            <span>📢</span>
+            <h3>Speech y Plantillas</h3>
+        </a>
+        <a href="matriculas.html" class="tool-card">
+            <span>🎓</span>
+            <h3>Matrículas</h3>
+        </a>
+        <a href="carne.html" class="tool-card">
+            <span>🪪</span>
+            <h3>Carné 1/2</h3>
+        </a>
+        <a href="responsables.html" class="tool-card">
+            <span>👨‍🏫</span>
+            <h3>Responsables Académicos</h3>
+        </a>
+        <a href="TU_LINK_CHATTIGO" class="tool-card" target="_blank">
+            <span>💬</span>
+            <h3>Chattigo</h3>
+        </a>
+    </div>
+</section>
+    
 <footer>
     <div class="footer-col">
         <img src="images/logo-certus-30.png" alt="Logo Certus">
