@@ -275,10 +275,17 @@ font-size:14px;
         <p>para los asesores del canal de atención</p>
     </div>
 </footer>
-    <script>
+   <script>
+const fecha = new Date();
 document.getElementById("fecha-actualizacion")
-.innerHTML =
-new Date().toLocaleDateString("es-PE");
+.innerHTML = fecha.toLocaleDateString(
+'es-PE',
+{
+day:'numeric',
+month:'long',
+year:'numeric'
+}
+);
 </script>
 </body>
 </html>
