@@ -6,41 +6,100 @@
 <title>Portal de Conocimiento</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
 
 body{
-font-family:Arial, sans-serif;
-margin:0;
-background:#f4f6f9;
+background:#f5f7fb;
 }
 
 header{
-background:#003366;
+
+background:linear-gradient(
+135deg,
+#003b78,
+#002a5e
+);
+
 color:white;
-padding:40px;
-text-align:center;
+
+padding:30px 80px 80px;
+
+position:relative;
 }
 
 .cards{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:40px;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+padding:50px 60px;
 }
 
 .card{
+
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-text-align:center;
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+}
+
+.card h3{
+
+font-size:30px;
+
+margin-bottom:20px;
+}
+
+.card p{
+
+font-size:18px;
+
+line-height:1.6;
+
+margin-bottom:30px;
 }
 
 .card a{
+
 text-decoration:none;
-color:#003366;
+
 font-weight:bold;
+
+font-size:18px;
 }
 
+.pregrado{
+
+border-top:8px solid #2d7ff9;
+}
+
+.pec{
+
+border-top:8px solid #27ae60;
+}
+
+.recursos{
+
+border-top:8px solid #8e44ad;
+}
 footer{
 text-align:center;
 padding:20px;
@@ -64,14 +123,6 @@ color:white;
     font-weight:500;
 }  
 
-header{
-    background:#003b78;
-    color:white;
-    text-align:center;
-    padding:40px 20px 60px;
-    position:relative;
-}
-
 .logo{
     position:absolute;
     top:15px;
@@ -83,6 +134,118 @@ header{
 .header-brand h1{
     margin:0;
 }
+nav{
+
+display:flex;
+
+justify-content:center;
+
+gap:50px;
+
+margin-top:10px;
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:500;
+}
+
+.hero{
+
+display:flex;
+
+justify-content:center;
+
+margin-top:80px;
+}
+
+.hero-text{
+
+max-width:900px;
+
+text-align:center;
+}
+
+.hero h1{
+
+font-size:64px;
+
+font-weight:700;
+
+margin-bottom:10px;
+}
+
+.hero h1 span{
+
+color:#17d4d4;
+}
+
+.hero h2{
+
+font-size:32px;
+
+margin-bottom:20px;
+}
+
+.hero p{
+
+font-size:22px;
+
+line-height:1.6;
+
+opacity:.95;
+
+margin-bottom:40px;
+}
+
+.search-box{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+}
+
+.search-box input{
+
+width:700px;
+
+padding:22px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:20px;
+}
+
+.search-box button{
+
+width:70px;
+
+height:70px;
+
+border:none;
+
+border-radius:50%;
+
+margin-left:-75px;
+
+cursor:pointer;
+
+font-size:24px;
+
+background:#00d3d3;
+}
+
+
     
 </style>
 
@@ -91,54 +254,87 @@ header{
 
 <header>
 <img src="images/logo-certus-30.png" alt="Logo Certus" class="logo"> 
-    
-<h1>🎓 Portal de Conocimiento</h1>
-</div>
-<p class="subtitulo">
-  Canal de Atención al Estudiante | CERTUS
-</p>
-<p class="descripcion">
-  Centraliza procedimientos, flujos, documentación y recursos para una atención eficiente y estandarizada.
-</p>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Novedades</a>
+        <a href="#">Directorio</a>
+    </nav>
+
+    <div class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Portal de <span>Conocimiento</span>
+            </h1>
+
+            <h2>
+                Canal de Atención al Estudiante | CERTUS
+            </h2>
+
+            <p>
+                Centraliza procedimientos, flujos, documentación y recursos para una atención eficiente y estandarizada.
+            </p>
+
+            <div class="search-box">
+
+                <input type="text" placeholder="¿Qué deseas consultar?">
+
+                <button>
+                    🔍
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </header>
 
 <section class="cards">
 
-<div class="card">
-<h2>📚 Documentación</h2>
-<a href="#">Ingresar</a>
-</div>
+    <div class="card pregrado">
 
-<div class="card">
-<h2>🔄 Flujos</h2>
-<a href="#">Ingresar</a>
-</div>
+        <h3>🌎 Mundo Pregrado</h3>
 
-<div class="card">
-<h2>❓ FAQ</h2>
-<a href="#">Ingresar</a>
-</div>
+        <p>
+            Todo lo que necesitas para atender consultas de estudiantes de Pregrado.
+        </p>
 
-<div class="card">
-<h2>🚨 Escalamientos</h2>
-<a href="#">Ingresar</a>
-</div>
+        <a href="pregrado.html">
+            Ingresar →
+        </a>
 
-<div class="card">
-<h2>🎥 Capacitaciones</h2>
-<a href="#">Ingresar</a>
-</div>
+    </div>
 
-<div class="card">
-<h2>👥 Directorio</h2>
-<a href="#">Ingresar</a>
-</div>
+    <div class="card pec">
+
+        <h3>🌎 Mundo PEC</h3>
+
+        <p>
+            Recursos y herramientas para atender consultas de Educación Continua.
+        </p>
+
+        <a href="pec.html">
+            Ingresar →
+        </a>
+
+    </div>
+
+    <div class="card recursos">
+
+        <h3>🌐 Recursos Institucionales</h3>
+
+        <p>
+            Información general y recursos transversales para todos los asesores.
+        </p>
+
+        <a href="servicios.html">
+            Ingresar →
+        </a>
+
+    </div>
 
 </section>
-
-<footer>
-creado por Jeison Bardales
-</footer>
-
-</body>
-</html>
