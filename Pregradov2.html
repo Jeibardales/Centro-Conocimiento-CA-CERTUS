@@ -75,7 +75,7 @@ body{
 .hero{
     background:white;
     border-radius:25px;
-    padding:40px;
+    padding:30px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -106,8 +106,8 @@ body{
 
 .search-box input{
     width:100%;
-    max-width:600px;
-    padding:18px 25px;
+    max-width:500px;
+    padding:15px 22px;
     border:none;
     border-radius:40px;
     background:#F5F8FC;
@@ -157,7 +157,7 @@ body{
 }
 
 .card{
-    background:#F8FBFF;
+    background:white;
     border:1px solid #E8EEF7;
     border-radius:18px;
     padding:22px;
@@ -167,8 +167,10 @@ body{
 }
 
 .card:hover{
-    transform:translateY(-4px);
+    transform:translateY(-5px);
     border-color:#18D0D8;
+    box-shadow:
+0 15px 30px rgba(0,0,0,.08);
 }
 
 .card span{
@@ -181,7 +183,11 @@ body{
     margin:0;
     font-size:18px;
 }    
-    
+.card p{
+font-size:13px;
+color:#6B7280;
+margin-top:8px;
+}    
   </style>
 </head>
 <body>
@@ -248,7 +254,10 @@ body{
 
                 <a href="#" class="card">
                     <span>📘</span>
-                    <h3>Reglamento Interno</h3>
+                   <h3>Reglamento Interno</h3>
+                    <p>
+                    Normativa académica vigente.
+                    </p>
                 </a>
 
                 <a href="#" class="card">
