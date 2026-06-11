@@ -1,4 +1,227 @@
-<div class="layout">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo Pregrado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Nunito',sans-serif;
+}
+body{
+    margin:0;
+    font-family:'Nunito',sans-serif;
+    background:#F5F8FC;
+    color:#1F2937;
+}
+
+.layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:240px;
+    background:#002F6C;
+    color:white;
+    padding:25px;
+    position:fixed;
+    height:100vh;
+}
+
+.sidebar img{
+    width:150px;
+    margin-bottom:40px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    margin-bottom:10px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,.12);
+}
+
+.sidebar .active{
+    background:#18D0D8;
+    color:#002F6C;
+    font-weight:700;
+}
+
+/* CONTENIDO */
+
+.main{
+    margin-left:240px;
+    width:100%;
+    padding:40px;
+}
+
+/* HERO */
+
+.hero{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.hero-text h1{
+    font-size:48px;
+    color:#003B78;
+    margin:0;
+}
+
+.hero-text p{
+    color:#667085;
+    font-size:18px;
+}
+
+.hero img{
+    width:260px;
+}
+
+/* BUSCADOR */
+
+.search-box{
+    margin-top:20px;
+}
+
+.search-box input{
+    width:100%;
+    max-width:600px;
+    padding:18px 25px;
+    border:none;
+    border-radius:40px;
+    background:#F5F8FC;
+    font-size:16px;
+}
+
+/* SECCIONES */
+
+.section{
+    margin-bottom:35px;
+}
+
+.section-title{
+    font-size:28px;
+    color:#003B78;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+/* QUICK ACCESS */
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.quick-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-decoration:none;
+    color:#003B78;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.quick-card:hover{
+    transform:translateY(-5px);
+}
+
+/* BLOQUES */
+
+.block{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.block-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.block-header h2{
+    margin:0;
+    color:#003B78;
+}
+
+.instituto{
+    border-left:8px solid #2D7FF9;
+}
+
+.escuela{
+    border-left:8px solid #27AE60;
+}
+
+.generales{
+    border-left:8px solid #8A4DFF;
+}
+
+/* CARDS */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#F8FBFF;
+    border:1px solid #E8EEF7;
+    border-radius:18px;
+    padding:22px;
+    text-decoration:none;
+    color:#003B78;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    border-color:#18D0D8;
+}
+
+.card span{
+    font-size:34px;
+    display:block;
+    margin-bottom:12px;
+}
+
+.card h3{
+    margin:0;
+    font-size:18px;
+}    
+    
+  </style>
+</head>
+<body>
+  
+    <div class="layout">
 
     <!-- SIDEBAR -->
 
