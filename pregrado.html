@@ -15,155 +15,218 @@ box-sizing:border-box;
 font-family:'Nunito',sans-serif;
 }
 body{
-background:#f5f7fb;
+background:#f4f7fb;
+font-family:'Nunito',sans-serif;
+margin:0;
 }
-header{
-background:linear-gradient(
-135deg,
-#003b78,
-#002a5e
-);
-padding:30px 50px;
-color:white;
-position:relative;
+.topbar{
+background:white;
+height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 40px;
+box-shadow:0 2px 15px rgba(0,0,0,.05);
 }
 .logo{
-width:180px;
+width:170px;
 }
-.hero{
-text-align:center;
-padding:40px 0;
+.topbar-right{
+display:flex;
+gap:15px;
+align-items:center;
 }
-.hero h1{
-font-size:48px;
-font-weight:800;
-margin-bottom:10px;
-}
-.hero p{
-font-size:18px;
-opacity:.9;
-}
-.volver{
-display:inline-block;
-margin-top:20px;
+.btn-home{
+background:#003b78;
+color:white;
 padding:10px 20px;
-background:white;
-color:#003b78;
+border-radius:25px;
 text-decoration:none;
-border-radius:30px;
 font-weight:700;
 }
-.container{
-max-width:1300px;
-margin:auto;
-padding:50px;
+.page-title{
+padding:40px 50px 20px;
 }
-.seccion-titulo{
-font-size:36px;
-font-weight:800;
+.page-title h1{
+font-size:42px;
 color:#003b78;
+margin-bottom:10px;
+}
+.page-title p{
+font-size:18px;
+color:#666;
+}
+.container{
+max-width:1400px;
+margin:auto;
+padding:20px 50px 50px;
+}
+.bloque{
+background:white;
+border-radius:20px;
+padding:30px;
 margin-bottom:30px;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+.instituto{
+border-left:8px solid #2D7FF9;
+}
+.escuela{
+border-left:8px solid #27AE60;
+}
+.generales{
+border-left:8px solid #8E44AD;
+}
+.bloque h2{
+font-size:30px;
+margin-bottom:25px;
+color:#003b78;
 }
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 .card{
-background:white;
-padding:30px;
-border-radius:25px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
+background:#f8fafd;
+padding:20px;
+border-radius:15px;
 text-decoration:none;
 color:#333;
+transition:.3s;
+border:1px solid #eef2f7;
 }
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 35px rgba(0,0,0,.12);
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 .card span{
-font-size:50px;
+font-size:32px;
 display:block;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 .card h3{
-font-size:24px;
-margin-bottom:10px;
+font-size:18px;
 color:#003b78;
 }
-.card p{
-font-size:15px;
-line-height:1.5;
-}
 footer{
-margin-top:60px;
+margin-top:40px;
 background:#002a5e;
 color:white;
-padding:25px;
 text-align:center;
+padding:20px;
 }
 </style>
 </head>
 <body>
-<header>
-<img src="images/logo-certus-30.png"
-alt="Certus"
-class="logo">
-<div class="hero">
-<h1>Mundo Pregrado</h1>
-<p>
-Documentación, flujos y recursos para la atención de estudiantes de Pregrado.
-</p>
-<a href="index.html" class="volver">
-← Volver al Inicio
-</a>
+
+<div class="topbar">
+
+    <img src="images/logo-certus-30.png"
+         alt="Certus"
+         class="logo">
+    <div class="topbar-right">
+        <a href="index.html" class="btn-home">
+            ← Volver al Inicio
+        </a>
+    </div>
 </div>
-</header>
+<div class="page-title">
+    <h1>🌎 Mundo Pregrado</h1>
+    <p>
+        Recursos académicos, normativos y operativos para estudiantes de Pregrado.
+    </p>
+</div>
 <div class="container">
-<h2 class="seccion-titulo">
-🌎 Recursos de Pregrado
-</h2>
-<div class="grid">
-<a href="#" class="card">
-<span>📚</span>
-<h3>Documentación</h3>
-<p>
-Procedimientos, guías y documentos oficiales.
-</p>
-</a>
-<a href="#" class="card">
-<span>🔄</span>
-<h3>Flujos</h3>
-<p>
-Flujos operativos y pasos de atención.
-</p>
-</a>
-<a href="#" class="card">
-<span>❓</span>
-<h3>FAQ</h3>
-<p>
-Preguntas frecuentes de los estudiantes.
-</p>
-</a>
-<a href="#" class="card">
-<span>🚨</span>
-<h3>Escalamientos</h3>
-<p>
-Canales y responsables de atención.
-</p>
-</a>
-<a href="#" class="card">
-<span>🎥</span>
-<h3>Capacitaciones</h3>
-<p>
-Grabaciones y material de formación.
-</p>
-</a>
-</div>
+    <!-- INSTITUTO -->
+    <div class="bloque instituto">
+        <h2>🏛️ Instituto</h2>
+        <div class="grid">
+            <a href="#" class="card">
+                <span>📘</span>
+                <h3>Reglamento Interno</h3>
+            </a>
+            <a href="#" class="card">
+                <span>🗺️</span>
+                <h3>Mallas</h3>
+            </a>
+            <a href="#" class="card">
+                <span>🎓</span>
+                <h3>Carreras</h3>
+            </a>
+            <a href="#" class="card">
+                <span>📂</span>
+                <h3>Documentos</h3>
+            </a>
+            <a href="#" class="card">
+                <span>📝</span>
+                <h3>Sustentación</h3>
+            </a>
+            <a href="#" class="card">
+                <span>🏆</span>
+                <h3>Título</h3>
+            </a>
+        </div>
+    </div>
+    <!-- ESCUELA -->
+    <div class="bloque escuela">
+        <h2>🎓 Escuela</h2>
+        <div class="grid">
+            <a href="#" class="card">
+                <span>📘</span>
+                <h3>Reglamento Interno</h3>
+            </a>
+            <a href="#" class="card">
+                <span>🗺️</span>
+                <h3>Mallas</h3>
+            </a>
+            <a href="#" class="card">
+                <span>🎓</span>
+                <h3>Carreras</h3>
+            </a>
+            <a href="#" class="card">
+                <span>📂</span>
+                <h3>Documentos</h3>
+            </a>
+            <a href="#" class="card">
+                <span>📝</span>
+                <h3>Sustentación de Título</h3>
+            </a>
+            <a href="#" class="card">
+                <span>🎖️</span>
+                <h3>Sustentación de Bachiller</h3>
+            </a>
+        </div>
+    </div>
+    <!-- GENERALES -->
+    <div class="bloque generales">
+        <h2>🌐 Generales</h2>
+        <div class="grid">
+            <a href="carnemedio.html" class="card">
+                <span>🪪</span>
+                <h3>Carné 1/2</h3>
+            </a>
+            <a href="#" class="card">
+                <span>🎓</span>
+                <h3>Graduación</h3>
+            </a>
+            <a href="#" class="card">
+                <span>🕒</span>
+                <h3>Horario de Atención</h3>
+            </a>
+            <a href="RespAcad.html" class="card">
+                <span>👨‍🏫</span>
+                <h3>Responsables Académicos</h3>
+            </a>
+            <a href="#" class="card">
+                <span>🎖️</span>
+                <h3>Pronabec</h3>
+            </a>
+        </div>
+    </div>
 </div>
 <footer>
 Portal de Conocimiento CAE | CERTUS
 </footer>
 </body>
-</html>
