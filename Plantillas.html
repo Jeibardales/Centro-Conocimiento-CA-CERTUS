@@ -294,7 +294,61 @@ border-radius:12px;
 z-index:1000;
 
 }
+.categoria{
+margin-bottom:40px;
+}
 
+.categoria h2{
+margin-bottom:20px;
+font-size:28px;
+color:#003B78;
+}
+
+.categoria-verde h2{
+color:#16a34a;
+}
+
+.categoria-naranja h2{
+color:#f59e0b;
+}
+
+.categoria-azul h2{
+color:#2563eb;
+}
+
+.speech-card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.05);
+transition:.3s;
+}
+
+.speech-card:hover{
+transform:translateY(-5px);
+}
+
+.speech-card h3{
+color:#003B78;
+margin-bottom:10px;
+}
+
+.speech-card p{
+font-size:14px;
+color:#6b7280;
+margin-bottom:15px;
+}
+
+.speech-card button{
+width:100%;
+padding:12px;
+border:none;
+background:#18D0D8;
+color:white;
+font-weight:700;
+border-radius:12px;
+cursor:pointer;
+}
 </style>
 
 </head>
@@ -310,20 +364,16 @@ class="logo">
 
 <a href="index.html">🏠 Inicio</a>
 
-<a href="pregrado.html">🌎 Mundo Pregrado</a>
+<a href="pregrado.html">🌎 Pregrado</a>
 
-<a href="pec.html">💻 Mundo PEC</a>
+<a href="pec.html">💻 PEC</a>
 
-<a href="servicios.html">🌐 Recursos</a>
+<a href="servicios.html">🌐 Servicios Generales</a>
 
 <hr style="margin:25px 0;border-color:rgba(255,255,255,.2)">
 
 <a href="Plantillas.html" class="active">
 📄 Speech y Plantillas
-</a>
-
-<a href="#">
-💬 Chattigo
 </a>
 
 </div>
@@ -342,30 +392,143 @@ Encuentra aquí todos los speech utilizados por el canal de atención.
 
 </div>
 
+<!-- ========================= -->
+<!-- SOLICITUDES SIN CARGO -->
+<!-- ========================= -->
+
+<section class="categoria categoria-verde">
+
+<h2>🟢 Solicitudes sin Cargo</h2>
+
 <div class="grid">
 
 <div class="speech-card">
-
-<h3>🎓 Matrícula Extemporánea</h3>
-
-<span class="badge cargo">
-Con Cargo
-</span>
-
-<p>
-Speech para atención de matrícula fuera de fecha.
-</p>
-
+<h3>Cambio de Correo</h3>
+<p>Plantilla de atención para actualización de correo.</p>
 <button onclick="abrirModal()">
 Ver Speech
 </button>
+</div>
 
+<div class="speech-card">
+<h3>Actualización de Datos</h3>
+<p>Información para actualización de datos personales.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
+</div>
+
+<div class="speech-card">
+<h3>Constancia de Estudios</h3>
+<p>Procedimiento para emisión de constancias.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
+</div>
+
+<div class="speech-card">
+<h3>Información Académica</h3>
+<p>Consultas académicas generales.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
 </div>
 
 </div>
 
+</section>
+
+<!-- ========================= -->
+<!-- SOLICITUDES CON CARGO -->
+<!-- ========================= -->
+
+<section class="categoria categoria-naranja">
+
+<h2>🟠 Solicitudes con Cargo</h2>
+
+<div class="grid">
+
+<div class="speech-card">
+<h3>Matrícula Extemporánea</h3>
+<p>Procedimiento y costo de matrícula fuera de fecha.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
 </div>
 
+<div class="speech-card">
+<h3>Cambio de Turno</h3>
+<p>Información sobre cambios de turno.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
+</div>
+
+<div class="speech-card">
+<h3>Cambio de Sede</h3>
+<p>Información sobre traslado de sede.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
+</div>
+
+<div class="speech-card">
+<h3>Trámite de Título</h3>
+<p>Proceso y costos asociados.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SPEECH GENERALES -->
+<!-- ========================= -->
+
+<section class="categoria categoria-azul">
+
+<h2>🔵 Speech Generales</h2>
+
+<div class="grid">
+
+<div class="speech-card">
+<h3>Bienvenida</h3>
+<p>Mensaje de inicio de atención.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
+</div>
+
+<div class="speech-card">
+<h3>Seguimiento de Caso</h3>
+<p>Comunicación de seguimiento.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
+</div>
+
+<div class="speech-card">
+<h3>Solicitud Observada</h3>
+<p>Cuando una solicitud requiere correcciones.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
+</div>
+
+<div class="speech-card">
+<h3>Cierre de Atención</h3>
+<p>Mensaje final de cierre de caso.</p>
+<button onclick="abrirModal()">
+Ver Speech
+</button>
+</div>
+
+</div>
+
+</section>
 <!-- MODAL -->
 
 <div id="modalSpeech" class="modal">
